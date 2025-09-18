@@ -1,0 +1,7 @@
+{
+  "name": "userArea",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
