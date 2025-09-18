@@ -9,9 +9,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" [style.background]="backgroundColor">
-  <div class="container">
+<ion-content [fullscreen]="true" >
+  <div class="container" style="height:92vh" [style.background]="backgroundColor">
+   
+    <!--  
+      https://ionicframework.com/docs/api/avatar
+      eu n sou uma i.a
+    -->
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
     <h1>Olá, {{userName}}!</h1>
-    <p>Sua página estará pronta após definir as configurações</p>
+    <p></p>
   </div>
 </ion-content>
