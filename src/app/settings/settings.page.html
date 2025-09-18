@@ -1,13 +1,29 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>settings</ion-title>
+    <ion-title>Configurações</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">settings</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nome do Usuário</ion-label>
+      <ion-input [(ngModel)]="userName" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Cor de Fundo</ion-label>
+      <ion-select [(ngModel)]="selectedColor" interface="popover">
+        <ion-select-option value="white">Branco</ion-select-option>
+        <ion-select-option value="blue">Azul</ion-select-option>
+        <ion-select-option value="green">Verde</ion-select-option>
+        <ion-select-option value="pink">Rosa</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="buttons">
+    <ion-button expand="block" (click)="cancel()">CANCEL</ion-button>
+    <ion-button expand="block" (click)="save()">SALVAR</ion-button>
+  </div>
 </ion-content>
