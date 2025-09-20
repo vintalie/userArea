@@ -9,17 +9,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" >
-  <div class="container" style="height:92vh" [style.background]="backgroundColor">
+<ion-content [fullscreen]="true" [style.--background]="backgroundColor">
+  <div class="container" style="height:92vh; margin-top:50px;background-color:transparent">
    
     <!--  
       https://ionicframework.com/docs/api/avatar
       eu n sou uma i.a
     -->
-    <ion-avatar>
-      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    <ion-avatar class="text-align-center margin-auto" style="margin:auto">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
     </ion-avatar>
-    <h1>Olá, {{userName}}!</h1>
+    <h1>Olá, {{ userName }}!</h1>
     <p></p>
   </div>
 </ion-content>
